@@ -34,7 +34,7 @@ class IOClient extends BaseClient {
         ..contentLength = (request?.contentLength ?? -1)
         ..persistentConnection = request.persistentConnection;
       request.headers.forEach((name, value) {
-        ioRequest.headers.set(name, value);
+        ioRequest.headers.set(name, value, true);
       });
 
       var response = await stream.pipe(ioRequest) as HttpClientResponse;

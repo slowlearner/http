@@ -1,4 +1,4 @@
-name: http
+name: sensitive_http
 version: 0.12.2
 homepage: https://github.com/dart-lang/http
 description: A composable, multi-platform, Future-based API for HTTP requests.
